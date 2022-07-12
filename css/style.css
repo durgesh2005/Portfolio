@@ -33,6 +33,7 @@ body {
     color: white;
     position: fixed;
     width: 100%;
+    z-index:999;
     top: 0;
     display: none;
     animation: menus 1s;
@@ -47,7 +48,8 @@ nav  button {
     float: right;
     font-size: 25px;
     display: none;
-    position: absolute;
+    position: fixed;
+    z-index:999;
     right: 20px;
     top: 10px;
     border: none;
