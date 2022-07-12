@@ -14,7 +14,9 @@
 <body>
     <header>
         <nav>
+            <button id="btn">&#9776;</button>
             <div class="mobile-menu">
+        <a href="#" id="close">&times;</a>
                 <ul>
                     <li><a href="#head">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
@@ -225,5 +227,18 @@
     </footer>
 </body>
 <script>
+      $('.mobile-menu').hide();
+         $('#btn').click(function(){
+         $('.mobile-menu').show();
+         });
+
+         $('#close').click(function(){
+            $('.mobile-menu').hide();
+            $('#btn').show();
+         });
+
+         $('.mobile-menu li').click(function(){
+            $('.mobile-menu').hide();
+         })
 </script>
 </html>
